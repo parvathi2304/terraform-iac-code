@@ -4,11 +4,8 @@
     stages {
         stage('Checkout') {
             steps {
-                git (
-                     url : 'https://github.com/parvathi2304/terraform-iac-code.git', // Replace with your Git repo URL
-                 branch: 'main'
-                    )
-            }
+                    git branch: 'main', url: 'https://github.com/parvathi2304/terraform-iac-code.git' // Replace with your Git repo URL
+                                       }
         }
 
         stage('Install Terraform') {
